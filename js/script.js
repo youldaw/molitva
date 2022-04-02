@@ -1,42 +1,50 @@
 $(function (){
-    $('input[name=phone]').mask('+7 (999) 999-99-99');
-    $('.scroll-down-btn').on('click', function(e) {
-      e.preventDefault(); // Запрещаем переход по ссылке
-      var target= $(this).attr('href'), // Берем значение из ссылки как цель id="second-screen"
-            destination= $(target).offset().top; // Ищем верхнюю координату у нашей цели
+    // $('input[name=phone]').mask('+7 (999) 999-99-99'); q
 
-      $('body,html').animate({scrollTop: destination}, 500); // Плавно проматываем до цели
-    });
-    $('header .nav-link').on('click', function(e) {
-      e.preventDefault(); // Запрещаем переход по ссылке
-      var target= $(this).attr('href'), // Берем значение из ссылки как цель id="second-screen"
-            destination= $(target).offset().top; // Ищем верхнюю координату у нашей цели
-
-      $('body,html').animate({scrollTop: destination}, 500); // Плавно проматываем до цели
-    });
-
-    $('.main-slide').owlCarousel({
-        loop:true,
+    $('.mini-slider').owlCarousel({
+        loop:false,
         // autoplay : true,
         // autoplayTimeout : 8000,
-        margin:0,
+        margin:24,
         nav:true,
         dots:true,
         center: false,
         smartSpeed:900,
-        items:1,
-        navText: ['<img src="images/arrow-left.png">','<img src="images/arrow-left.png">'],
+        items:6,
+        navText: ['<span><svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10.5 10.5L1 20" stroke="white" stroke-width="2"/></svg></span>','<span><svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10.5 10.5L1 20" stroke="white" stroke-width="2"/></svg></span>'],
+        responsive:{
+            0:{
+                items:3,
+            },
+            600:{
+                items:4,
+            },
+            1000:{
+                items:5,
+            }
+        }
+    });
+
+    $('.second-slider').owlCarousel({
+        loop:false,
+        // autoplay : true,
+        // autoplayTimeout : 8000,
+        margin:20,
+        nav:true,
+        dots:true,
+        center: false,
+        smartSpeed:900,
+        items:2,
+        navText: ['<span><svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10.5 10.5L1 20" stroke="white" stroke-width="2"/></svg></span>','<span><svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10.5 10.5L1 20" stroke="white" stroke-width="2"/></svg></span>'],
         responsive:{
             0:{
                 items:1,
             },
             600:{
                 items:1,
-                margin:0,
             },
             1000:{
-                items:1,
-                margin:0,
+                items:2,
             }
         }
     });
