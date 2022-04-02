@@ -55,7 +55,18 @@ $(function (){
         $('.top-left').toggleClass('active');
     });
 
-    
+    $('.search-opener').on('click',function(e){
+        e.preventDefault();
+        $(this).addClass('active');
+        $('.searchbox').addClass('active');
+    });
+    $(document).mouseup(function (e){
+        var div = $(".searchbox, .search-opener");
+        if (!div.is(e.target) 
+            && div.has(e.target).length === 0) {
+            div.removeClass('active');
+        }
+    });
     
 
 });

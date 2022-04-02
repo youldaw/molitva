@@ -598,15 +598,173 @@ header .navbar-expand-lg .navbar-nav .nav-link.active:after {
 	color: #FFFFFF;
 	text-transform: uppercase;
 }
+/* end */
+/* start prayer-choose */
+.prayer-choose {
+	padding: 80px 0;
+}
+.prayer-choose .prch-rov {
+	align-items: center;
+}
+.prayer-choose .pch-rov {
+	margin-top: 60px;
+}
+/* start search form */
+.prayer-choose .search-opener {
+	position: relative;
+	z-index: 6;
+}
 
+.prayer-choose .searchbox {
+	position: relative;
+	width: 500px;
+	transition: .3s all ease;
+	margin-left: auto;
+}
 
+.prayer-choose .searchbox .search-btn {
+	position: absolute;
+	right: 24px;
+    top: 13px;
+	border: none;
+	background: transparent;
+	z-index: 8;
+	padding: 0;
+}
+.prayer-choose .searchbox input.head-search {
+    border: 1px solid rgba(45, 45, 45, 0.4);
+	border-radius: 32px;
+	position: relative;
+	z-index: 7;
+	padding: 16px 24px;
 
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #2D2D2D;
+	width: 100%;
+}
+.prayer-choose .searchbox a {
+    font-size: 14px;
+	line-height: 16px;
+	color: #363636;
+}
+.prayer-choose .searchbox ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	z-index: 5;
+	background: #FFFFFF;
+	border-radius: 32px;
+	overflow: hidden;
+	height: 0;
+	transition: .3s all ease;
+	transform: scale(0);
+}
+.prayer-choose .searchbox.active ul {
+	transform: scale(1);
+	margin: 8px 0 0 0;
+	border: 1px solid rgba(45, 45, 45, 0.4);
+	height: 286px;
+	padding: 24px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.prayer-choose .searchbox .suggestions li {
+	transition: .3s all ease;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25);
+	height:60px;
+}
+.prayer-choose .searchbox .suggestions > p {
+	margin: 16px 0;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: rgba(45, 45, 45, .5);
+}
+.prayer-choose .searchbox .suggestions li:last-child {
+	box-shadow: none;
+}
+.prayer-choose .searchbox .suggestions li a {
+	display: flex;
+	align-items: center;
+	width: 100%;
+    height: 80%;
+}
+.prayer-choose .searchbox .suggestions li:hover a {
+	margin-left: 10px;
+}
+.prayer-choose .searchbox .suggestions li a img {
+	margin-right: 18px;
+	height: 26px;
+}
+#style-2::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
 
+#style-2::-webkit-scrollbar {
+	width: 0px;
+	background-color: #F5F5F5;
+}
 
+#style-2::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: rgba(45, 45, 45, .5);
+}
+/* end search form */
+.prayer-choose .prayer-choose-item {
+	display: flex;
+	align-items: flex-start;
+	background-color: #5B509D;
+	height: 215px;
+	border-radius: 16px;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.prayer-choose .prayer-choose-item .choose-item-img {
+	width: 138px;
+}
+.prayer-choose .prayer-choose-item .choose-item-text {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+.prayer-choose .prayer-choose-item .choose-item-text h4 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 120%;
+	color: #FFFFFF;
+	margin-bottom: 8px;
+}
+.prayer-choose .prayer-choose-item .choose-item-text p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	color: #FFFFFF;
+}
 
+.prayer-choose .prayer-choose-item .choose-item-text a {
+	width: 80%;
+	text-align: center;
+	white-space: nowrap;
+}
 
-
-
+.prayer-choose .all-btn {
+	text-align: center;
+	margin-top: 50px;
+}
+.prayer-choose .all-btn a {
+	padding: 16px 38px;
+}
 
 
 
