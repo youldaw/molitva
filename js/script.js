@@ -49,6 +49,28 @@ $(function (){
         }
     });
 
+    $(".chapel-gallery").owlCarousel({
+        loop:false,
+        // autoplay : true,
+        // autoplayTimeout : 8000,
+        margin:16,
+        nav: false,
+        dots:true,
+        autoWidth: true,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items: 3
+            }
+        }
+        
+    });
+
 
     $('.menu-mob, .menu-closer').on('click',function(e){
         e.preventDefault();

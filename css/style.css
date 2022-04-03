@@ -765,9 +765,99 @@ header .navbar-expand-lg .navbar-nav .nav-link.active:after {
 .prayer-choose .all-btn a {
 	padding: 16px 38px;
 }
+/* // end // */
+/* start Ответы на частые вопросы */
+.index-faq {
+	padding: 80px 0 85px;
+	background: #5B509D;
+}
+.index-faq .title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+.index-faq .title a {
+	padding: 16px 85px;
+}
+.index-faq .index-img img {
+	width: 100%;
+}
 
+.index-faq .card-col {
+	padding-left: 60px;
+}
+.index-faq .card {
+	border: none;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	background: transparent;
+	border-radius: 0;
+}
+.index-faq .card-header {
+	padding: 0;
+	background: transparent;
+	border: none;
+}
+.index-faq .card .card-btn {
+	width: 100%;
+	background: transparent;
+	padding: 24px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.index-faq .card .card-btn span {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 140%;
+	color: #FFFFFF;
+}
 
+.index-faq .card .card-btn[aria-expanded="true"] img {
+	transform: rotate(90deg);
+}
 
+.index-faq .card .card-body {
+	padding: 0;
+}
+
+/* /////////////////// */
+.index-gallery {
+	padding: 75px 0 60px;
+}
+.index-gallery .title {
+	margin-bottom: 75px;
+}
+.chapel-gallery .owl-nav {
+	display: none;
+}
+.chapel-gallery img {
+    width: 568.89px;
+    height: 320px;
+    border-radius: 16px;
+}
+.chapel-gallery .owl-dots {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding-top: 70px;
+}
+.chapel-gallery .owl-dots .owl-dot {
+	background: rgba(45, 45, 45, .2);
+    height: 1px;
+	width: 100%;
+}
+.chapel-gallery .owl-dots .owl-dot.active {
+	height: 3px;
+	background: #E130B4;
+}
+
+.chapel-gallery.owl-drag {
+    overflow: visible;
+}
+/* end */
+/* start index faq modals */
 
 
 
