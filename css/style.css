@@ -891,6 +891,9 @@ header .navbar-expand-lg .navbar-nav .nav-link.active:after {
 .pages_nav.blue .pages_link.active {
 	color: #FF82DF;
 }
+.pages_nav.blue .pages_slash {
+	color: #fff;
+}
 .index-faq.faq-sec {
 	padding: 20px 0 100px;
 	background: linear-gradient(0deg, rgba(91, 80, 157, 0.9), rgba(91, 80, 157, 0.9)), #FFFFFF;
