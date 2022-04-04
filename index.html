@@ -19,8 +19,11 @@
 					<div class="col-lg-12">
 						<nav class="navbar navbar-expand-lg">
 							<a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+							<a href="#!" class="user-mob mob"><img src="images/user-mob.svg" alt=""></a>
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							  <span class="navbar-toggler-icon"></span>
+							  <span class="one"></span>
+							  <span class="two"></span>
+							  <span class="three"></span>
 							</button>
 						  
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,16 +53,20 @@
 										<a class="nav-link" href="#">Неусыпаемая Псалтирь</a>
 									</li>
 								</ul>
+								<div class="exit-lk mob">
+									<a href="#!">Выйти из аккаунта</a>
+								</div>
 								<div class="nav-right">
 									<div class="right-link">
 										<div class="yt-btn">
-											<a href="#!" class="right-top"><img src="images/head-youtoube.svg" alt=""></a>
+											<a href="#!" class="right-top pc"><img src="images/head-youtoube.svg" alt=""></a>
+											<a href="#!" class="right-top mob"><img src="images/head-youtoube-mob.svg" alt=""></a>
 										</div>
 										<div class="right-btn">
 											<a href="#!" class="pink-btn">Подписаться</a>
 										</div>
 									</div>
-									<div class="right-lk">
+									<div class="right-lk pc">
 										<a href="#!"><img src="images/user.svg" alt=""> <span>Войти</span></a>
 									</div>
 								</div>
@@ -209,9 +216,12 @@
 			<section class="index-broadcast">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-12 title white mob">
+							<h2>Скоро в эфире</h2>
+						</div>
+						<div class="col-lg-6 broadcast-left-col">
 							<div class="broadcast-left">
-								<div class="title white">
+								<div class="title white pc">
 									<h2>Скоро в эфире</h2>
 								</div>
 								<div class="broadcast-text">
@@ -221,7 +231,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6">
+						<div class="col-lg-6 broadcast-right-col">
 							<div class="broadcast-video">
 								<iframe width="100%" height="100%" src="https://www.youtube.com/embed/DEFq_fAW7Vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
@@ -301,7 +311,7 @@
 									<a href="#!"><img src="images/mini-slider3.png" alt=""> <span>Дети, внуки, крестники</span></a>
 								</div>
 								<div class="mini-items">
-									<a href="#!"><img src="images/mini-slider4.png" alt=""> <span>Семейный мир, благополучие</span></a>
+									<a href="#!"><img src="images/mini-slider4.png" alt=""> <span class="long">Семейный мир, благополучие</span></a>
 								</div>
 								<div class="mini-items">
 									<a href="#!"><img src="images/mini-slider5.png" alt=""> <span>Житейские проблемы</span></a>
@@ -703,11 +713,11 @@
 					<div class="row">
 						<div class="col-lg-12 title white">
 							<h2>Ответы на частые вопросы</h2>
-							<a href="#!" class="pink-btn">Все вопросы</a>
+							<a href="#!" class="pink-btn pc">Все вопросы</a>
 						</div>
 					</div>
 					<div class="row align-items-center">
-						<div class="col-lg-4">
+						<div class="col-lg-4 card-col-left">
 							<div class="faq-img">
 								<img src="images/faq-img.png" alt="">
 							</div>
@@ -757,6 +767,10 @@
 										</button>
 									</div>
 								</div>
+							</div>
+
+							<div class="faq-show-all mob">
+								<a href="#!" class="pink-btn">Все вопросы</a>
 							</div>
 						</div>
 					</div>

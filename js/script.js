@@ -14,7 +14,7 @@ $(function (){
         navText: ['<span><svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10.5 10.5L1 20" stroke="white" stroke-width="2"/></svg></span>','<span><svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10.5 10.5L1 20" stroke="white" stroke-width="2"/></svg></span>'],
         responsive:{
             0:{
-                items:3,
+                items:2,
             },
             600:{
                 items:4,
@@ -59,13 +59,13 @@ $(function (){
         autoWidth: true,
         responsive:{
             0:{
-                items:2
+                items:1.2,
             },
             600:{
-                items:3
+                items:3,
             },
             1000:{
-                items: 3
+                items:3,
             }
         }
         
