@@ -95,6 +95,31 @@ img,button {
 	color: #fff;
 }
 
+.pages_link{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(45, 45, 45, 0.5);
+}
+
+.pages_link.active{
+    color: #5B509D;
+}
+
+.pages_slash{
+    color: rgba(45, 45, 45, 0.5);
+}
+
+
+.container{
+    max-width: 1332px;
+}
+
+.page_title{
+    font-weight: 700;
+    font-size: 56px;
+    color: #2D2D2D;
+}
+
 header {
 	background: #5B509D;
 	padding: 25px 0;
@@ -856,6 +881,67 @@ header .navbar-expand-lg .navbar-nav .nav-link.active:after {
     overflow: visible;
 }
 /* end */
+/* ====================== new page faq ==================== */
+.pages_nav.blue {
+	background: linear-gradient(0deg, rgba(91, 80, 157, 0.9), rgba(91, 80, 157, 0.9)), #FFFFFF;
+}
+.pages_nav.blue .pages_link {
+	color: #fff;
+}
+.pages_nav.blue .pages_link.active {
+	color: #FF82DF;
+}
+.index-faq.faq-sec {
+	padding: 20px 0 100px;
+	background: linear-gradient(0deg, rgba(91, 80, 157, 0.9), rgba(91, 80, 157, 0.9)), #FFFFFF;
+}
+.faq-sec .title h1 {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 120%;
+	color: #FFFFFF;
+}
+.faq-sec .card-col {
+	padding-left: 15px;
+}
+.faq-sec .faq-img img {
+	width: 100%;
+}
+.faq-sec .faq-img {
+	padding-left: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* start footer */
 footer {
 	padding-top: 40px;
@@ -1402,6 +1488,7 @@ footer .ftr-sub .ftr-end p {
 	.index-faq .card .card-btn span {
 		font-size: 18px;
 		line-height: 25px;
+		width: 90%;
 	}
 	.chapel-gallery img {
 		width: 305px;
@@ -1459,6 +1546,22 @@ footer .ftr-sub .ftr-end p {
 	footer .ftr-sub .ftr-end p {
 		padding-top: 16px;
 		border-top: 1px solid rgba(255, 255, 255, 0.2);
+	}
+	.modal .modal-content {
+		padding: 20px 15px;
+	}
+	.modal .modal-content .modal-body .modal-video {
+		height: 200px;
+	}
+	/* new page faq */
+	.faq-sec .title h1 {
+		font-size: 32px;
+		line-height: 110%;
+	}
+	.faq-sec .faq-img {
+		padding-left: 0;
+		text-align: center;
+		margin-top: 50px;
 	}
 }
 
