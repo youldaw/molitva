@@ -913,7 +913,73 @@ header .navbar-expand-lg .navbar-nav .nav-link.active:after {
 .faq-sec .faq-img {
 	padding-left: 45px;
 }
+/* ===== end ========= */
+/* ===== start map section ========= */
+.map-wrap header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 137px;
+}
+.map-sec .map-block {
+	height: 100vh;
+	width: 100%;
+	padding: 0;
+}
+.map-sec .map-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.map-sec .map-btn a {
+	width: 290px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #FFFFFF;
+	padding: 16px 68px;
+	position: absolute;
+	bottom: 27px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+#map-modal .modal-content {
+	padding: 50px 40px 60px;
+}
+#map-modal .modal-header,
+#map-modal .modal-body {
+	padding: 0;
+	border: none;
+}
+#map-modal .modal-header h5 {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 140%;
+	color: #2D2D2D;
+	margin-bottom: 30px;
+}
+#map-modal .modal-body p {
+	margin-bottom: 30px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 140%;
+	color: #000000;
+}
+#map-modal .modal-body h4 {
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 140%;
+	color: #2D2D2D;
+}
+
+/* ===== end ========= */
 
 
 
@@ -1118,6 +1184,15 @@ footer .ftr-sub .ftr-end p {
 	}
 }
 @media only screen and (max-width: 480px){
+	.map-wrap header {
+		height: auto;
+	}
+	.map-sec .map-block {
+		height: 100%;
+	}
+	.map-sec .map-block iframe {
+		height: 100vh;
+	}
 	.mob{display: block;}
 	.pc {display: none;}
 

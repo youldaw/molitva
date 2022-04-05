@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="fonts/evolventa.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap4/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=480"> -->
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="map-wrap">
+            <header class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg">
+                                <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+                                <a href="#!" class="user-mob mob"><img src="images/user-mob.svg" alt=""></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="one"></span>
+                                  <span class="two"></span>
+                                  <span class="three"></span>
+                                </button>
+                              
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#">Главная</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Факты помощи</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Расписание</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Карта</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Вопросы</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Подать имена</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Усиление молитвы</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Неусыпаемая Псалтирь</a>
+                                        </li>
+                                    </ul>
+                                    <div class="exit-lk mob">
+                                        <a href="#!">Выйти из аккаунта</a>
+                                    </div>
+                                    <div class="nav-right">
+                                        <div class="right-link">
+                                            <div class="yt-btn">
+                                                <a href="#!" class="right-top pc"><img src="images/head-youtoube.svg" alt=""></a>
+                                                <a href="#!" class="right-top mob"><img src="images/head-youtoube-mob.svg" alt=""></a>
+                                            </div>
+                                            <div class="right-btn">
+                                                <a href="#!" class="pink-btn">Подписаться</a>
+                                            </div>
+                                        </div>
+                                        <div class="right-lk pc">
+                                            <a href="#!"><img src="images/user.svg" alt=""> <span>Войти</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+    
+            <main>
+                <section class="map-sec">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12 map-block">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d35925.57994955898!2d37.617845078941166!3d55.75244375432249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YbQtdGA0LrQvtCy0Yw!5e0!3m2!1sru!2s!4v1649148643235!5m2!1sru!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <div class="col-lg-12 map-btn">
+                                <a href="#!" class="will-pray pink-btn" data-toggle="modal" data-target="#map-modal">я буду молиться!</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+	</div>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#map-modal">
+        Launch demo modal
+    </button> -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="map-modal" tabindex="-1" aria-labelledby="попо" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="попо">Карта сомолитвенников</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <p>Данная карта, конечно, не отражает весь тот уникальный всемирный размах молитвы по соглашению. Это всего лишь малая часть наших братьев и сестер по духу, которые несут вместе с нами свой духовный труд в разных уголках мира, соделывая поистине вселенский масштаб молитвы. Десятки и десятки тысяч городов образуют ежедневно молитвенный пожар на планете!</p>
+                    <h4>Господи, Благослови!!!</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="libs/bootstrap4/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
