@@ -89,6 +89,15 @@ $(function (){
             div.removeClass('active');
         }
     });
+
+
+    $(function(){
+        $(".option__login").click(function(){
+          $(".input__login").addClass("input--error")
+          $(".message").text("Неверный пароль или логин")
+          $(".message-container").addClass("message-container--error");
+        });
+    });
     
 
 });

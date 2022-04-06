@@ -980,8 +980,157 @@ header .navbar-expand-lg .navbar-nav .nav-link.active:after {
 }
 
 /* ===== end ========= */
+/* start login section */
+.login-sec {
+	background: linear-gradient(0deg, rgba(91, 80, 157, 0.9), rgba(91, 80, 157, 0.9)), #FFFFFF;
+	padding: 12px 0 180px;
+	position: relative;
+}
+.login-sec .title {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.login-sec .login-block .message {
+	position: absolute;
+	right: 65px;
+	top: -15px;
+	background-image: url('../images/info-icon.svg');
+	background-repeat: no-repeat;
+	background-position: 20px 10px;
+	padding-left: 30px;
+	background-color: #FFFFFF;
+	border: 2px solid #FF0000;
+	border-radius: 8px;
+	padding: 12px 24px 12px 60px;
+	opacity: 0;
+	transition: .2s all ease;
+}
+.login-sec .login-block .message-container.message-container--error .message {
+	opacity: 1;
+	top: -45px;
+}
+.login-sec .login-col {
+	position: unset;
+}
+.login-sec .for-form .form-group span {
+	display: block;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #FFFFFF;
+	margin-bottom: 16px;
+}
+.login-sec .for-form .form-group input {
+	background: #FFFFFF;
+	border: 1px solid rgba(45, 45, 45, 0.4);
+	border-radius: 16px;
+	padding: 16px 24px;
+	width: 100%;
+	border:none;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: rgba(45, 45, 45, 1);
+}
+.login-sec .for-form .form-group input::placeholder {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: rgba(45, 45, 45, .5);
+}
 
+.login-sec .for-form .btns-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.login-sec .for-form .btns-block button {
+	width: 100%;
+	padding: 16px;
+	background: #E130B4;
+	border-radius: 32px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 16px 0 30px;
+}
+.login-sec .for-form .btns-block button:hover {
+	background: #FF82DF;
+}
+.login-sec .for-form .btns-block a {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	text-decoration-line: underline;
+	color: #FFFFFF;
+}
+.login-sec .for-form .btns-block a:hover {
+	text-decoration: none;
+}
 
+.login-sec .for-form .politic-agree {
+	padding: 20px 0;
+}
+.login-sec .for-form .politic-agree label p a,
+.login-sec .for-form .politic-agree label p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 130%;
+	color: #FFFFFF;
+}
+.login-sec .for-form .politic-agree label p {
+	padding-left: 16px;
+}
+.login-sec .for-form .politic-agree label p a {
+	text-decoration: underline;
+}
+.login-sec .for-form .control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.login-sec .for-form .control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.login-sec .for-form .control__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background: transparent;
+  border: 2px solid #FF82DF;
+  border-radius: 2px;
+}
+.login-sec .for-form .control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.login-sec .for-form .control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.login-sec .for-form .control--checkbox .control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 6px;
+  height: 10px;
+  border: solid #FF82DF;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.login-sec .for-form .control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+/* ===== end ========= */
 
 
 
@@ -1184,6 +1333,14 @@ footer .ftr-sub .ftr-end p {
 	}
 }
 @media only screen and (max-width: 480px){
+	.map-sec .map-btn {
+		position: relative;
+		margin-top: -80px;
+	}
+	.map-sec .map-btn a {
+		position: unset;
+		z-index: 5;
+	}
 	.map-wrap header {
 		height: auto;
 	}
@@ -1640,6 +1797,22 @@ footer .ftr-sub .ftr-end p {
 		padding-left: 0;
 		text-align: center;
 		margin-top: 50px;
+	}
+	/* ///////// */
+	.login-sec {
+		padding-top: 110px;
+	}
+	.login-sec .login-block .message-container.message-container--error .message {
+		top: 30px;
+	}
+	.login-sec .login-block .message {
+		right: 20px;
+		left: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.login-sec .title {
+		margin-bottom: 40px;
 	}
 }
 
