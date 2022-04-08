@@ -1087,7 +1087,7 @@ header .navbar-expand-lg .navbar-nav .nav-link.active:after {
 .login-sec .for-form .politic-agree label p a {
 	text-decoration: underline;
 }
-.login-sec .for-form .control {
+.control-check {
   display: block;
   position: relative;
   padding-left: 30px;
@@ -1095,12 +1095,12 @@ header .navbar-expand-lg .navbar-nav .nav-link.active:after {
   cursor: pointer;
   font-size: 18px;
 }
-.login-sec .for-form .control input {
+.control-check input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-.login-sec .for-form .control__indicator {
+.control__indicator {
   position: absolute;
   top: 0;
   left: 0;
@@ -1110,15 +1110,15 @@ header .navbar-expand-lg .navbar-nav .nav-link.active:after {
   border: 2px solid #FF82DF;
   border-radius: 2px;
 }
-.login-sec .for-form .control__indicator:after {
+.control__indicator:after {
   content: '';
   position: absolute;
   display: none;
 }
-.login-sec .for-form .control input:checked ~ .control__indicator:after {
+.control-check input:checked ~ .control__indicator:after {
   display: block;
 }
-.login-sec .for-form .control--checkbox .control__indicator:after {
+.control--checkbox .control__indicator:after {
   left: 8px;
   top: 4px;
   width: 6px;
@@ -1127,12 +1127,684 @@ header .navbar-expand-lg .navbar-nav .nav-link.active:after {
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
-.login-sec .for-form .control--checkbox input:disabled ~ .control__indicator:after {
+.control--checkbox input:disabled ~ .control__indicator:after {
   border-color: #7b7b7b;
 }
 /* ===== end ========= */
+/* ====== start lk ============ */
+.personal-cabinet {
+	padding-bottom: 100px;
+}
+.personal-cabinet .title {
+	margin: 24px 0;
+}
+.personal-cabinet .top-btns {
+	display: flex;
+	align-items: center;
+	margin-bottom: 32px;
+}
+.personal-cabinet .top-btns a {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #E130B4;
+	padding: 8px 57px;
+	background: #FFFFFF;
+	border: 2px solid #E130B4;
+	border-radius: 32px;
+}
+.personal-cabinet .top-btns a:last-child {
+	margin-left: 16px;
+}
+.personal-cabinet .top-btns a:hover {
+	background: #E130B4;
+	color: #fff;
+}
+.personal-cabinet .personal-block {
+	margin-bottom: 45px;
+	padding-right: 50px;
+}
+.personal-cabinet .personal-block .personal-item {
+	display: flex;
+	align-items: center;
+	padding-bottom: 16px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid rgba(0,0,0, .2);
+}
+.personal-cabinet .personal-block .personal-item:last-child {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+.personal-cabinet .personal-block .personal-item .per-item-text {
+	width: 270px;
+}
+.personal-cabinet .personal-block .personal-item .per-item-text span {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 120%;
+	color: #000000;
+}
+.personal-cabinet .personal-block .personal-item .per-item-info img {
+	height: 64px;
+}
+.personal-cabinet .personal-block .personal-item .per-item-info p {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 120%;
+	color: #000000;
+}
+/* notofication */
+.personal-cabinet .top-notif {
+	display: flex;
+	align-items: center;
+	padding: 10px 16px 10px 24px;
+	background: #FFFFFF;
+	border: 2px solid #31BC00;
+	border-radius: 8px;
+	margin-bottom: 32px;
+}
+.personal-cabinet .top-notif .title {
+	margin-top: 0;
+}
+.personal-cabinet .top-notif span {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 170%;
+	color: #2D2D2D;
+	margin-top: 4px;
+}
+.personal-cabinet .top-notif img {
+	padding-right: 16px;
+}
 
+.personal-cabinet .personal-notif {
+	padding-right: 110px;
+}
+.personal-cabinet .per-notif-text .notif-text-item {
+	margin-bottom: 24px;	
+}
+.personal-cabinet .per-notif-text .notif-text-item .control-check p {
+	padding-left: 10px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: #2D2D2D;
+}
+.personal-cabinet .per-notif-text .notif-item-drop {
+	margin-top: 20px;
+	margin-left: 41px;
+	background: #FFFFFF;
+	border: 1px solid rgba(45, 45, 45, 0.3);
+	border-radius: 16px;
+	padding: 15px 4px 15px 24px;
+}
+.personal-cabinet .per-notif-text .notif-item-drop .notif-scrollbar {
+	height: 270px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-right: 20px;
+}
+.personal-cabinet .per-notif-text .notif-item-drop label {
+	padding-bottom: 16px;
+	border-bottom: 1px solid rgba(45, 45, 45, .3);
+}
+.personal-cabinet .per-notif-text .notif-item-drop label:last-child  {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.personal-cabinet .per-notif-text .notif-item-drop label p.prayer-text {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 130%;
+	color: #2D2D2D;
+}
+.personal-cabinet .per-notif-text .notif-item-drop label p.prayer-time {
+	font-size: 16px;
+	line-height: 130%;
+	color: #2D2D2D;
+}
+/* scrollbar */
+#notif-side-scroll::-webkit-scrollbar-track,
+#notif-scroll::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: transparent;
+}
+#notif-side-scroll::-webkit-scrollbar,
+#notif-scroll::-webkit-scrollbar {
+	width: 8px;
+	background-color: transparent;
+	position: relative;
+	right: 2px;
+}
+#notif-side-scroll::-webkit-scrollbar-thumb,
+#notif-scroll::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #E130B4;
+}
+/* scrollbar */
+.personal-cabinet .personal-in {
+	border-radius: 16px;
+	border: 1px solid rgba(45, 45, 45, 0.3);
+	padding: 32px 4px 32px 40px;
+}
+.personal-cabinet .personal-side {
+	background: #FFFFFF;
+	height: 1072px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-right: 36px;
+}
+.personal-cabinet .personal-side .title {
+	margin: 0 0 40px;
+}
 
+.personal-cabinet .personal-side .side-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+.personal-cabinet .personal-side .side-header .num {
+	position: relative;
+}
+.personal-cabinet .personal-side .side-header .num .num-prayer {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	color: rgba(45, 45, 45, 0.4);
+	margin-right: 4px;
+}
+.personal-cabinet .personal-side .side-header .side-price {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 120%;
+	color: #E130B4;
+}
+.personal-cabinet .personal-side .side-header .num .num-prayer img {
+	margin-top: -8px;
+}
+.personal-cabinet .personal-side .side-header .num .my-tooltip {
+	position: absolute;
+	left: 120px;
+	bottom: 100%;
+	background: #FFFFFF;
+	border: 1px solid rgba(45, 45, 45, 0.3);
+	border-radius: 8px;
+	padding: 15px 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 220px;
+	opacity: 0;
+	transition: .4s all ease;
+	transform: scale(0);
+}
+.personal-cabinet .personal-side .side-header .num:hover .my-tooltip {
+	opacity: 1;
+	transform: scale(1);
+}
+.personal-cabinet .personal-side .side-header .num .my-tooltip span {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 170%;
+	color: #2D2D2D;
+	line-height: 1;
+	margin-top: 2px;
+}
+.personal-cabinet .personal-side .side-body {
+	margin-bottom: 16px;
+}
+.personal-cabinet .personal-side .side-body p {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #000000;
+}
+.personal-cabinet .personal-side .side-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.personal-cabinet .personal-side .side-footer p,
+.personal-cabinet .personal-side .side-footer span {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 120%;
+	color: #000000;
+}
+.personal-cabinet .personal-side .side-item {
+	padding-bottom: 14px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid rgba(45, 45, 45, .3)
+}
+/* modal form */
+.modal.change-pass .modal-dialog,
+.modal.lk-data .modal-dialog {
+	max-width: 590px;
+}
+.modal.change-pass .modal-content .modal-header h5,
+.modal.lk-data .modal-content .modal-header h5 {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 140%;
+	color: #2D2D2D;
+}
+.lk-data .modal-body .form-group > span {
+	display: block;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #2D2D2D;
+	margin-bottom: 16px;
+}
+.lk-data .modal-body .form-group input {
+	background: #FFFFFF;
+	border: 1px solid rgba(45, 45, 45, 0.4);
+	border-radius: 16px;
+	padding: 16px 24px;
+	width: 100%;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: rgba(45, 45, 45, 1);
+}
+.lk-data .modal-body .form-group input::placeholder {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: rgba(45, 45, 45, .5);
+}
+
+.lk-data .modal-body .modal-form-btn {
+	text-align: right;
+}
+.lk-data .modal-body .modal-form-btn button {
+	padding: 16px 100px;
+	background: #E130B4;
+	border-radius: 32px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 16px 0;
+}
+.lk-data .modal-body .modal-form-btn button:hover {
+	background: #FF82DF;
+}
+.lk-data .modal-body .city p {
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 140%;
+	margin-bottom: 16px;
+}
+.lk-data .modal-body .city p span {
+	color: #31BC00;
+}
+/* ============ custom select ================= */
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+  height: 56px;
+}
+
+.select-styled {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	padding: 0 24px;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+
+	border: 1px solid rgba(45, 45, 45, 0.4);
+	border-radius: 16px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #31BC00;
+	display: flex;
+	align-items: center;
+}
+.select-styled:after {
+	content: "";
+	width: 21px;
+	height: 18px;
+	background-image: url('../images/select-arrow.svg');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 20px;
+	right: 24px;
+	transition: .4s all ease;
+}
+.select-styled:hover {
+  background-color: #E130B4;
+  color: #fff;
+}
+.select-styled:active, .select-styled.active {
+  background-color: #FF82DF;
+  color: #fff;
+}
+.select-styled:active:after, .select-styled.active:after {
+  transform: rotate(-180deg);
+  top: 13px;
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0 0 2px;
+  padding: 0;
+  list-style: none;
+  background-color: #E130B4;
+  border-radius: 16px;
+  overflow-x: hidden;
+  height: 200px;
+  overflow-y: auto;
+}
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.select-options li:hover, .select-options li.is-selected {
+  color: #fff;
+  background: #FF82DF;
+}
+.select-options li[rel="hide"] {
+  display: none;
+}
+
+/* scrollbar */
+.select-options::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: transparent;
+}
+.select-options::-webkit-scrollbar {
+	width: 4px;
+	background-color: transparent;
+}
+.select-options::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: rgba(45, 45, 45, .5);
+}
+/* scrollbar */
+.filelabel {
+    width: 80px;
+    display: block;
+    transition: border 300ms ease;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+}
+.filelabel img {
+    display: inline-block;
+	height: 80px;
+}
+#FileInput{
+    display:none;
+}
+/* //////// */
+.lk-data .modal-body .change-img {
+	display: flex;
+	align-items: center;
+}
+.lk-data .modal-body .change-img .change-info {
+	margin-left: 15px;
+}
+.lk-data .modal-body .change-img .change-info span {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	color: rgba(45, 45, 45, .5);
+}
+.lk-data .modal-body .change-img .change-info a {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 140%;
+	color: #E130B4;
+}
+.lk-data .modal-body .change-img .change-info a:hover {
+	color: #FF82DF;
+}
+
+/* change password */
+.change-pass .modal-body .custom-pass {
+	width: 100%;
+	position: relative;
+}
+.change-pass .modal-body .custom-pass > span {
+	position: absolute;
+	right: 24px;
+	top: 12px;
+	cursor: pointer;
+}
+.change-pass .modal-body .custom-pass > span img {
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: scale(0);
+}
+.change-pass .modal-body .custom-pass > span.fa-eye img.eye-closed {
+	opacity: 1;
+	transform: scale(1);
+}
+.change-pass .modal-body .custom-pass > span.fa-eye-slash img.eye-opened {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.change-pass .modal-body .custom-pass input {
+	width: 100%;
+	height: 56px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #2D2D2D;
+	letter-spacing: 2px;
+	transition: all .3s ease-in-out;
+	border-radius: 16px;
+	border: 1px solid rgba(45, 45, 45, 0.4);
+	padding: 2px 24px;
+}
+.change-pass .modal-body .custom-pass input::placeholder {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 140%;
+	color: #2D2D2D;
+	letter-spacing: 2px;
+	position: absolute;
+	left: 24px;
+	top: 18px;
+}
+.change-pass .modal-body .change-password .form-group > span {
+	display: block;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #2D2D2D;
+	margin-bottom: 16px;
+}
+/* end change password */
+
+/* start help prayer */
+/* notification style */
+.notification-text {
+	display: flex;
+	align-items: center;
+	padding: 10px 16px 10px 24px;
+	background: #FFFFFF;
+	border: 2px solid #31BC00;
+	border-radius: 8px;
+	margin-bottom: 35px;
+}
+.notification-text.error {
+	border: 2px solid #FF0000;
+}
+.notification-text.error span svg path {
+	fill: #FF0000;
+}
+.notification-text.error span svg circle {
+	stroke: #FF0000;
+}
+.notification-text.pink {
+	border: 2px solid #E130B4;
+}
+.notification-text.pink span svg path {
+	fill: #E130B4;
+}
+.notification-text.pink span svg circle {
+	stroke: #E130B4;
+}
+.notification-text p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 170%;
+	color: #2D2D2D;
+}
+.notification-text span {
+	padding-right: 16px;
+	position: relative;
+	top: 2px;
+}
+/* notification style */
+.help-prayer {
+	padding: 20px 0 120px;
+	background: linear-gradient(0deg, rgba(91, 80, 157, 0.9), rgba(91, 80, 157, 0.9)), #FFFFFF;
+}
+.help-prayer .title h1 {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 120%;
+	color: #FFFFFF;
+	margin-bottom: 44px;
+}
+.help-prayer .help-prayer-container {
+	padding: 35px 50px 70px;
+	background: #FFFFFF;
+	border-radius: 16px;
+}
+.help-prayer .help-prayer-block .help-prayer-left {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.help-prayer .help-prayer-block .help-prayer-left img {
+	height: 157px;
+	min-width: 157px;
+	border-radius: 50%;
+}
+.help-prayer .help-prayer-block .help-prayer-left h3 {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 140%;
+	color: #2D2D2D;
+	margin-left: 30px;
+}
+.help-prayer .help-prayer-block .help-left-text p {
+	margin-bottom: 40px;
+	color: #000;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 180%;
+}
+.help-prayer .help-prayer-block .help-left-text p:last-child {
+	margin-bottom: 0;
+}
+
+.help-prayer .help-prayer-form input {
+	width: 100%;
+	height: 54px;
+	transition: all .3s ease-in-out;
+	border-radius: 16px;
+	border: 1px solid rgba(45, 45, 45, 0.4);
+	padding: 2px 24px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: rgba(45, 45, 45, 1);
+}
+.help-prayer .help-prayer-form input::placeholder {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: rgba(45, 45, 45, .5);
+}
+.help-prayer .help-prayer-form .form-tel {
+	margin: 24px 0;
+}
+.help-prayer .help-prayer-form .form-textarea {
+	margin-bottom: 0;
+}
+.help-prayer .help-prayer-form .form-group textarea {
+	height: 197px;
+	width: 100%;
+	border: 1px solid rgba(45, 45, 45, 0.4);
+	border-radius: 16px;
+	padding: 16px 24px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #2D2D2D;
+}
+.help-prayer .help-prayer-form .form-group textarea::placeholder {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #2D2D2D;
+}
+.help-prayer .help-prayer-form .form-group > span {
+	display: block;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #2D2D2D;
+	margin-bottom: 16px;
+}
+.help-prayer .help-prayer-form .help-form-btn button {
+	padding: 16px 84px;
+	background: #E130B4;
+	border-radius: 32px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 16px 0 30px;
+}
+.help-prayer .help-prayer-form .help-form-btn button:hover {
+	background: #FF82DF;
+}
 
 
 
@@ -1249,8 +1921,6 @@ footer .ftr-menu-links .props p {
 	white-space: nowrap;
 }
 
-
-
 footer .ftr-sub {
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
 	padding-top: 17px;
@@ -1278,9 +1948,6 @@ footer .ftr-sub .ftr-end p {
 	line-height: 21px;
 	color: #FFFFFF;
 }
-
-
-
 /* end */
 
 /* start index faq modals */
@@ -1324,6 +1991,23 @@ footer .ftr-sub .ftr-end p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .mob{display: none;}
 
 
@@ -1332,7 +2016,74 @@ footer .ftr-sub .ftr-end p {
 		max-width: 1440px;
 	}
 }
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 768px){
+	.help-prayer .help-prayer-block .help-left-text p:last-child {
+		margin-bottom: 40px;
+	}
+	.help-prayer .help-prayer-block .help-left-text p {
+		font-size: 14px;
+		line-height: 140%;
+	}
+	.help-prayer .help-prayer-block .help-left-text p {
+		margin-bottom: 20px;
+	}
+	.help-prayer .help-prayer-block .help-prayer-left {
+		margin-bottom: 24px;
+	}
+	.help-prayer .help-prayer-block .help-prayer-left h3 {
+		margin-left: 16px;
+		font-size: 24px;
+		line-height: 120%;
+	}
+	.help-prayer .help-prayer-block .help-prayer-left img {
+		height: 80px;
+		min-width: 80px;
+	}
+	.notification-text p {
+		line-height: 140%;
+	}
+	.notification-text {
+		align-items: flex-start;
+		padding: 10px 14px;
+		margin-bottom: 24px;
+	}
+	.help-prayer .help-prayer-container {
+		padding: 18px 20px;
+	}
+	.help-prayer {
+		padding: 0 0 60px;
+	}
+	.personal-cabinet .per-notif-text .notif-item-drop label p.prayer-text {
+		font-size: 14px;
+	}
+	.personal-cabinet .personal-side .side-header .num .my-tooltip,
+	footer .ftr-menu-links .props .props-drop {
+		left: 0;
+	}
+	.personal-cabinet .personal-right {
+		margin-top: 45px;
+	}
+	.personal-cabinet .personal-in {
+		padding: 20px 4px 20px 20px;
+	}
+	.personal-cabinet .personal-side {
+		height: 520px;
+	}
+	.personal-cabinet .personal-block .personal-item .per-item-text {
+		width: 175px;
+	}
+	.personal-cabinet .top-btns a:last-child {
+		margin-left: 0;
+		margin-top: 16px;
+	}
+	.personal-cabinet .top-btns {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.personal-cabinet .personal-notif,
+	.personal-cabinet .personal-block {
+		padding-right: 0;
+	}
 	.map-sec .map-btn {
 		position: relative;
 		margin-top: -80px;
