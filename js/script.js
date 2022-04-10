@@ -68,7 +68,30 @@ $(function (){
                 items:3,
             }
         }
-        
+    });
+
+    $('.fact-mini-slider').owlCarousel({
+        loop:false,
+        // autoplay : true,
+        // autoplayTimeout : 8000,
+        margin:24,
+        nav:true,
+        dots:true,
+        center: false,
+        smartSpeed:900,
+        items:6,
+        navText: ['<span><svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10.5 10.5L1 20" stroke="#E130B4" stroke-width="2"/></svg></span>','<span><svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10.5 10.5L1 20" stroke="#E130B4" stroke-width="2"/></svg></span>'],
+        responsive:{
+            0:{
+                items:2,
+            },
+            600:{
+                items:3,
+            },
+            1000:{
+                items:5,
+            }
+        }
     });
 
 
@@ -88,6 +111,17 @@ $(function (){
             && div.has(e.target).length === 0) {
             div.removeClass('active');
         }
+    });
+
+
+    $('.mob-nav a').on('click',function(e){
+        e.preventDefault();
+        $('.mob-nav a').removeClass('active');
+        $(this).addClass('active');
+        var tabId = $(this).attr('href');
+        console.log(tabId);
+        $('.mob-tab-content .mob-tab-pane').removeClass('active');
+        $('.mob-tab-content ' + tabId).addClass('active');
     });
 
 
