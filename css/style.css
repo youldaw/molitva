@@ -2498,7 +2498,7 @@ footer .ftr-sub .ftr-end p {
 .fact-slide .title{
 	margin-bottom: -65px;
 }
-.fact-slide {
+.fact-slide .fact-slide-container {
 	padding: 110px 0 54px;
 	position: relative;
 }
