@@ -95,9 +95,39 @@ $(function (){
     });
 
 
+    $('.fact-slide-container').owlCarousel({
+        loop:false,
+        // autoplay : true,
+        // autoplayTimeout : 8000,
+        margin:25,
+        nav:true,
+        dots:true,
+        center: false,
+        smartSpeed:900,
+        items:3,
+        navText: ['<span><svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10.5 10.5L1 20" stroke="white" stroke-width="2"/></svg></span>','<span><svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10.5 10.5L1 20" stroke="white" stroke-width="2"/></svg></span>'],
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:2,
+            },
+            1000:{
+                items:3,
+            }
+        }
+    });
+
+
     $('.menu-mob, .menu-closer').on('click',function(e){
         e.preventDefault();
         $('.top-left').toggleClass('active');
+    });
+
+    $('.show-all').on('click',function(e){
+        e.preventDefault();
+        $('.fact-slide-item').removeClass('hide');
     });
 
     $('.search-opener').on('click',function(e){
