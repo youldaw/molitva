@@ -120,6 +120,55 @@ $(function (){
     });
 
 
+    // ///////////
+    $("#gain-gallery").owlCarousel({
+        loop:false,
+        // autoplay : true,
+        // autoplayTimeout : 8000,
+        margin:16,
+        nav: false,
+        dots:true,
+        autoWidth: true,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items: 3
+            }
+        }
+        
+    });
+
+    if( window.screen.width > 768){
+        $("#events-gallery").owlCarousel({
+            loop:false,
+            // autoplay : true,
+            // autoplayTimeout : 8000,
+            margin:7,
+            nav: false,
+            dots:true,
+            autoWidth: true,
+            responsive:{
+                0:{
+                    items:2
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items: 3
+                }
+            }
+            
+        });
+    }
+    // ///////
+
+
     $('.menu-mob, .menu-closer').on('click',function(e){
         e.preventDefault();
         $('.top-left').toggleClass('active');
@@ -211,8 +260,18 @@ $(function (){
             $styledSelect.removeClass('active');
             $list.hide();
         });
-    
     });
 
 });
 
+
+
+$("#gain_modal_choose").keyup(function () {
+    let el = $(this);
+   let value = $(this).val();
+    if( $("#datalistOptions option[value='" + value + "']").length > 0 ){
+        el.addClass('active')
+    } else{
+        el.removeClass('active')
+    }
+}).keyup();
